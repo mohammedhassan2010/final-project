@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(10000deg, #35155d, #512b81);
+  overflow-x: hidden;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  background: linear-gradient(10000deg, #512b81, #4477ce);
+  width: 100%;
+  opacity: 84%;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 20px 20px;
+  position: sticky;
+  top: 0;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+li {
+  display: inline;
+  color: #fff;
+  padding: 15px 20px;
+}
+li:hover {
+  background-color: #7091f5;
+  border-radius: 20px;
+  cursor: pointer;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.logo-div {
+  display: flex;
+  width: 100%;
+  justify-content: last baseline;
+  margin-left: 70px;
+}
+.search-input {
+  margin-right: 70px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(10000deg, #7091f5, #97fff4);
+}
+.img {
+  width: 400px;
+  height: 250px;
+}
+.card-img {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  background-color: #4d88ff;
+  margin: 30px;
+  margin-bottom: 70px;
+
+  width: 350px;
+  height: 500px;
+  padding: 40px;
+  border-radius: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h1 {
+  padding: 10px;
+  font-size: 30px;
+}
+.reservation-btn {
+  background-color: #3d88f5;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 20px;
+  transition: 2s;
+}
+.reservation-btn:hover {
+  background-color: #0caaf3;
+  cursor: pointer;
+  transform: scale(1.09);
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.reservations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.sign-up {
+  background-color: #0c6af3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 10px;
+  margin-right: 30px;
+  width: 100px;
+}
+.log-in {
+  background-color: #0c6af3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 10px;
+  margin-right: 30px;
+  width: 100px;
+}
+.sign-up:hover {
+  background-color: #4477ce;
+  cursor: pointer;
+}
+.log-in:hover {
+  background-color: #4477ce;
+  cursor: pointer;
+}
+.sign-log {
+  display: flex;
+}
+.user-profile {
+  background-color: blueviolet;
+  color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.swiper {
+  font-family: sans-serif;
+  font-size: 30px;
+  background-color: #35155d;
+  height: 450px;
+  text-align: center;
+}
+.swiper-slide {
+  margin-top: 220px;
+  cursor: grab;
+  font-family: "Fira Code", Fira, monospace;
+  font-size: 25px;
+  position: relative;
+  background-position: center;
+}
+
+.sign-log {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+}
+
+.dropdown-content {
+  display: none;
+  background: linear-gradient(1999deg, #4477ce, #3d88f5);
+  border-radius: 5px;
+  min-width: 210px;
+  max-width: 250px;
+  padding: 5px;
+  transform: translateX(-145px);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 10;
+}
+
+.dropdown-content li {
+  color: white;
+  padding: 13px 17px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+
+.dropdown-content li:hover {
+  background: linear-gradient(100000deg, #7091f5, #35155d);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-log:hover .dropdown-content {
+  display: block;
+}
+
+.card-text {
+  background-color: #276bf6;
+  padding: 10px;
+  border-radius: 10px;
+  height: 20rem;
+  font-size: 20px;
+}
+.name,
+.date,
+.status,
+.timezone,
+.number {
+  padding: 10px;
+  text-align: center;
+}
+.btns {
+  display: flex;
+  justify-content: center;
+}
+.prev,
+.next {
+  margin: 10px;
+  font-family: "Fira Code", Fira, monospace;
+  font-size: 20px;
+  background-color: #0089fa;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  transition: 2s;
+}
+.prev:hover,
+.next:hover {
+  transition: 2s;
+  background-color: #00c8fa;
+  cursor: pointer;
+  transform: scale(1.1);
+}

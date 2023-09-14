@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore-compat.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo-div">
+        <img class="logo" src="../images/fly.png" alt="" />
+      </div>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./index.html">reservations</a></li>
+        <li><a href="../about/index.html">About</a></li>
+        <li><a href="../contact/index.html">Contact</a></li>
+      </ul>
+      <div class="search_box">
+        <input
+          onkeyup="searchFunc()"
+          type="search"
+          class="search-input"
+          placeholder="search your timezone"
+        />
+      </div>
+    </nav>
+    <div class="reservations"></div>
+    <script src="../firebase.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

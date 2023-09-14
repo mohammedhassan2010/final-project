@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore-compat.js"></script>
+    <link rel="stylesheet" href="./swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <title>flightina</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo-div">
+        <img class="logo" src="./images/fly.png" alt="" />
+      </div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./reservation-page/index.html">reservations</a></li>
+        <li><a href="./about/index.html">About</a></li>
+        <li><a href="./contact/index.html">Contact</a></li>
+      </ul>
+      <div class="search_box">
+        <input
+          onkeyup="searchFunc()"
+          type="search"
+          class="search-input"
+          placeholder="search your timezone"
+        />
+      </div>
+
+      <div class="sign-log">
+        <button class="sign-up">Sign Up</button>
+      </div>
+    </nav>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          With the Fly website, you don't need to say anything
+        </div>
+        <div class="swiper-slide">
+          With the Fly website, book your trip to anywhere
+        </div>
+        <div class="swiper-slide">
+          We have provided you with an easy way to book, just press the button
+          and the rest is done
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="cards"></div>
+    <div class="btns">
+      <button class="prev" onclick="prev()"><--</button>
+      <button class="next" onclick="next()">--></button>
+    </div>
+    <script src="./firebase.js"></script>
+    <!-- <script src="https://pagination.js.org/dist/2.6.0/pagination.min.js"></script> -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

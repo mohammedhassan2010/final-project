@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(10000deg, #35155d, #512b81);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+nav {
+  display: flex;
+  background: linear-gradient(10000deg, #512b81, #4477ce);
+  width: 100%;
+  opacity: 84%;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  padding: 20px 20px;
+}
+ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+li {
+  display: inline;
+  color: #fff;
+  padding: 20px 20px;
+}
+li:hover {
+  background-color: #7091f5;
+  border-radius: 20px;
+  cursor: pointer;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.logo-div {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+.search-input {
+  margin-right: 70px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #3fb3f3;
+}
+.about-div {
+  background: linear-gradient(18deg, #793fdf, #7091f5);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.img {
+  width: 98%;
+  height: 98%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.img-div {
+  display: flex;
+  justify-content: center;
+}
+.about-p {
+  font-size: 30px;
+
+  color: #fff;
+  padding: 50px;
+  font-family: "Fira Code", Fira, monospace;
+
+  font-size: 25px;
+}
+details {
+  color: #fff;
+  font-family: "Fira Code", Fira, monospace;
+
+  font-size: 25px;
+  text-align: left;
+  padding: 10px;
+}
+summary {
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+mark {
+  color: #0044ff;
+}
+p {
+  padding: 10px;
+}
