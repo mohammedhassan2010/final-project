@@ -109,6 +109,7 @@ function addData(btn) {
 }
 
 // ! End reservation
+// * Start User Profile
 const nav = document.querySelector("nav");
 const signLog = document.querySelector(".sign-log");
 
@@ -149,14 +150,16 @@ db.collection("profileInformation").onSnapshot((doc) => {
       });
   });
 });
+// * End User Profile
+
 // ? Start search
 function searchFunc() {
   const input = document.querySelector(".search-input");
   const filter = input.value.toLowerCase();
-  const results = document.getElementsByClassName("plane-timezone");
+  const results = document.getElementsByClassName("timezone");
 
   for (let i = 0; i < results.length; i++) {
-    const listItem = results[i].parentElement;
+    const listItem = results[i].parentElement.parentElement;
 
     if (results[i].textContent.toLowerCase().includes(filter)) {
       listItem.style.display = "block";

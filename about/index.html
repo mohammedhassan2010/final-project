@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.3.0/firebase-firestore-compat.js"></script>
     <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>About</title>
   </head>
   <body>
     <nav>
@@ -20,11 +23,15 @@
       <div class="search_box">
         <input type="hidden" class="search-input" placeholder="search" />
       </div>
+
+      <div class="sign-log">
+        <button class="sign-up">Sign Up</button>
+      </div>
     </nav>
     <div class="about-div">
       <div class="img-div">
         <img
-          class="img"
+          class="image"
           src="https://images.sulairport.krd/root/root/images/7452023_DJI_0491_1600x578.jpg"
           alt=""
         />
@@ -76,5 +83,7 @@
         </details>
       </span>
     </div>
+    <script src="../firebase.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
