@@ -23,12 +23,12 @@ db.collection("reservation").onSnapshot((doc) => {
       </div>
       <div class="card-text">
         <p class="name">
-          Airport name : ${data.airportname}
+           ${data.airportname}
         </p>
-        <p class="date">flight date : ${data.flyTime}</p>
-        <p class="status">flight status : ${data.planestatus}</p>
-        <p class="timezone">timezone : ${data.planetimezone}</p>
-        <p class="number">flight number : ${data.planenumber}</p>
+        <p class="date"> ${data.flyTime}</p>
+        <p class="status"> ${data.planestatus}</p>
+        <p class="timezone">${data.planetimezone}</p>
+        <p class="number">${data.planenumber}</p>
 </div>
       </div>
 
